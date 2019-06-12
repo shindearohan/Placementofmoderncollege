@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".StudentRegistration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:layout_marginBottom="20dp"
+    android:textStyle="bold"
+    android:text="REGISTRATION"/>
+        <android.support.v7.widget.CardView
+            android:id="@+id/bankcardId"
+            android:layout_width="339dp"
+            android:layout_height="519dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/cerclebackgroundpurple"
+                    android:padding="10dp"
+                    android:src="@drawable/login" />
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="269dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_image="@drawable/username"
+                    app:mtf_labelColor="#666">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="UserName"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="269dp"
+                    android:layout_height="69dp"
+                    app:mtf_image="@drawable/password"
+                    app:mtf_labelColor="#666">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="271dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="269dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_image="@drawable/password"
+                    app:mtf_labelColor="#666">
+
+                    <EditText
+                        android:id="@+id/cpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Confirm Password"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
+                <com.github.florent37.materialtextfield.MaterialTextField
+                    android:layout_width="269dp"
+                    android:layout_height="wrap_content"
+                    app:mtf_image="@drawable/email"
+                    app:mtf_labelColor="#666">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email ID"
+                        android:textColor="#333"
+                        android:textSize="15sp" />
+
+                </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/holo_purple"
+                android:text="Register" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textview_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:textColor="@android:color/black"
+                        android:text="Already_Registered"
+                        />
+
+                    <TextView
+                        android:id="@+id/textview_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/holo_red_light"
+                        android:text="Login"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
